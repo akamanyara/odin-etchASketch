@@ -1,0 +1,28 @@
+:root {
+    --grid: 16;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*, *::after, *::before {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    width: 800px;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.pixel-div {
+    width: calc(100% / var(--grid));
+    height: calc(100% / var(--grid));
+    border: 1px solid black;
+}
+
+
